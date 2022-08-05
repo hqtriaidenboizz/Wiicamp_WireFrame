@@ -1,0 +1,38 @@
+// font-family
+$font-montserrat: 'Montserrat', sans-serif;
+$font-popins: 'Poppins', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+// color
+$black: #000000;
+$while: #ffffff;
+$color-1: #404040;
+$color-2: #656565;
+$color-3: #E1E1E1;
+
+:root{
+// font-weight
+
+--fw-1: 300;
+--fw-2: 400;
+--fw-3: 500;
+--fw-4: 600;
+--fw-5: 700;
+
+//font-size
+--fz-1: 15px;
+--fz-2: 16px;
+--fz-3: 18px;
+--fz-4: 20px;
+--fz-5: 32px;
+
+@media screen and (max-width:1000px) {
+    --fz-1: 13px;
+    --fz-2: 14px;
+    --fz-3: 16px;
+    --fz-4: 18px;
+    --fz-5: 30px;
+}
+}
+
+
