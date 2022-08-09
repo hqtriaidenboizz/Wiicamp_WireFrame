@@ -8,14 +8,14 @@
         align-items: flex-start;
         justify-content: left;
         position: absolute;
-        left: 7vw;
+        left: 100px;
         text-align:left;
         & h1{
             font-size: 48px;
             font-weight: var(--fw-5);
         }
         & p{
-            width: 37vw;
+            max-width: 487px;
             font-family: $font-roboto;
             font-size: 15px;
             font-weight: var(--fw-2);

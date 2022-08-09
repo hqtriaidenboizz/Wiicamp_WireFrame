@@ -6,7 +6,6 @@ function ex() {
      x.className = "menu";
 }
 }
-
 window.addEventListener("resize",ex )
 
 const OpentNavMobile = () =>{
