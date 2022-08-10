@@ -26,6 +26,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: black !important;
+  font-size: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -50,7 +51,7 @@
     --fz-2: 14px;
     --fz-3: 16px;
     --fz-4: 18px;
-    --fz-5: 30px;
+    --fz-5: 25px;
   }
 }
 
@@ -128,7 +129,7 @@ body {
     --fz-2: 14px;
     --fz-3: 16px;
     --fz-4: 18px;
-    --fz-5: 30px;
+    --fz-5: 25px;
   }
 }
 
@@ -308,6 +309,10 @@ body {
   .banner .title-slide {
     left: 10vw;
   }
+  .banner .title-slide h1 {
+    margin-bottom: 5px;
+    line-height: 30px;
+  }
   .banner .title-slide p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -451,6 +456,14 @@ body {
   }
   .our-products .list-products {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 20px !important;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 20px !important;
   }
 }
 .about-us {
