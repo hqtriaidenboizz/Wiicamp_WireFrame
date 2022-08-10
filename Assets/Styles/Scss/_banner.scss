@@ -13,12 +13,15 @@
         & h1{
             font-size: 48px;
             font-weight: var(--fw-5);
+            line-height: 58.1px;
+            margin-bottom: 16px;
         }
         & p{
             max-width: 487px;
             font-family: $font-roboto;
             font-size: 15px;
             font-weight: var(--fw-2);
+            line-height: 130%;
         }
     }
 
