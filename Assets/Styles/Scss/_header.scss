@@ -1,5 +1,8 @@
 .header{
+    position: fixed;
+    z-index: 9999;
     height: 80px;
+    max-width: 1920px;
     width: 100%;
     background-color: $while;
     &-main{
@@ -24,9 +27,9 @@
                     border-radius: 12px;
                 }
             }
-            &-item:not(:last-child):hover{
-                border-bottom: 2px solid black;
-            }
+            // &-item:not(:last-child):hover{
+            //     border-bottom: 2px solid black;
+            // }
         }
     }   
 }
@@ -41,12 +44,13 @@
 }
 @media  only screen and (max-width:920px) {
     .header{
-        // z-index: 100;
+
        &-main{
             & .navmobile{
                 transition: 1s;
-                transform: translate(0, 235px) !important;
-                z-index: 10000;
+                transform: translate(0, 225px) !important;
+                z-index: 10;
+                box-shadow: 0px 10px 10px -17px #111;  
             }
            & .menu{
                display: block;
@@ -54,9 +58,10 @@
                flex-direction: column;
                align-items: flex-start;
                position: absolute;
+               transition: 1s;
                transform: translate(0, -500px);
                right: 0;
-               background-color: $color-2;
+               background-color: $while;
                z-index: 10;
                &-item{
                 padding: 20px 0;

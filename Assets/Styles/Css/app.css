@@ -122,6 +122,10 @@ body {
   line-height: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --fw-1: 300;
   --fw-2: 400;
@@ -145,7 +149,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  z-index: 9999;
   height: 80px;
+  max-width: 1920px;
   width: 100%;
   background-color: #ffffff;
 }
@@ -170,9 +177,6 @@ body {
   font-weight: var(--fw-5);
   border-radius: 12px;
 }
-.header-main .menu-item:not(:last-child):hover {
-  border-bottom: 2px solid black;
-}
 
 @media only screen and (max-width: 1100px) {
   .header-main .menu {
@@ -182,8 +186,9 @@ body {
 @media only screen and (max-width: 920px) {
   .header-main .navmobile {
     transition: 1s;
-    transform: translate(0, 235px) !important;
-    z-index: 10000;
+    transform: translate(0, 225px) !important;
+    z-index: 10;
+    box-shadow: 0px 10px 10px -17px #111;
   }
   .header-main .menu {
     display: block;
@@ -191,9 +196,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
+    transition: 1s;
     transform: translate(0, -500px);
     right: 0;
-    background-color: #656565;
+    background-color: #ffffff;
     z-index: 10;
   }
   .header-main .menu-item {
