@@ -15,8 +15,12 @@ body {
 }
 
 .active {
+    
     font-weight: var(--fw-5);
     border-bottom: 4px solid $black;
+    & .menu-link{
+        color: $black !important;
+    }
 }
 
 .title {
@@ -54,7 +58,6 @@ body {
     &-item {}
 
     &-link {
-        color: $black;
         font-size: var(--fz-1);
         text-decoration: none;
     }

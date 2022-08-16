@@ -8,12 +8,14 @@
         align-items: flex-start;
         justify-content: left;
         position: absolute;
-        left: 100px;
+        left: 124px;
+        // top: 316px;
+        margin-bottom: 19px;
         text-align:left;
         & h1{
             font-size: 48px;
             font-weight: var(--fw-5);
-            line-height: 58.1px;
+            line-height: 58.51px;
             margin-bottom: 16px;
         }
         & p{
@@ -33,6 +35,7 @@
         width: 100%;
         height: 600px; 
         & .title-slide{
+            margin-bottom: 0;
             & h1{
                 font-size: 30px;
                 font-weight: var(--fw-5);

@@ -23,9 +23,19 @@
 .swiper-button-next ,
 .swiper-button-prev{
     color: black !important;
-    font-size: 20px;
 }
 .swiper-pagination-bullet{
   background-color: rgb(70, 70, 70) !important;
+  
+}
+.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 32px !important;
+
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  font-size: 30px !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  font-size: 30px !important;
 }
 
