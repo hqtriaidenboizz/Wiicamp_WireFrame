@@ -57,6 +57,12 @@
                 font-weight: var(--fw-5);
                 line-height: 26px;
                 color: $color-1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1; /* number of lines to show */
+                line-clamp: 1; 
+                -webkit-box-orient: vertical;  
             }
             & .item-price{
             line-height: 18.29px;
@@ -98,13 +104,14 @@
 
         }
         & .our-products--menu {
-            height: auto;
+        background-color:$while !important;
+
             & .menu {
-                flex-direction: column;
-                gap: 0 !important;
-                &-item {
-                    padding: 10px 0;
-                }
+                // // flex-direction: column;
+                // gap: 0 !important;
+                // &-item {
+                //     padding: 10px 0;
+                // }
             }
             &-link {
             }
@@ -120,7 +127,24 @@
         }
     }
 }
+.scroll::-webkit-scrollbar {
+    display: none; }
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
 @media  only screen and (max-width:480px) {
+    .our-products{
+
+    & .our-products--menu {
+        & .menu {
+            gap: 50 !important;
+            height: 100%;
+        }
+    }
+}
+
     .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
         font-size: 20px !important;
       }

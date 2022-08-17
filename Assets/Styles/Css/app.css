@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&family=Roboto:wght@400;700&display=swap");
 .swiper {
-  width: 100%;
+  max-width: 1200px;
+  width: 80%;
   height: 100%;
 }
 
@@ -44,6 +45,11 @@
   font-size: 30px !important;
 }
 
+@media only screen and (max-width: 480px) {
+  .swiper {
+    width: 90%;
+  }
+}
 :root {
   --fw-1: 300;
   --fw-2: 400;
@@ -467,6 +473,12 @@ body {
   font-weight: var(--fw-5);
   line-height: 26px;
   color: #404040;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .our-products .list-products .product-item .item-price {
   line-height: 18.29px;
@@ -482,20 +494,28 @@ body {
 }
 @media only screen and (max-width: 780px) {
   .our-products .our-products--menu {
-    height: auto;
-  }
-  .our-products .our-products--menu .menu {
-    flex-direction: column;
-    gap: 0 !important;
-  }
-  .our-products .our-products--menu .menu-item {
-    padding: 10px 0;
+    background-color: #ffffff !important;
   }
   .our-products .list-products {
     grid-template-columns: 1fr;
   }
 }
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 @media only screen and (max-width: 480px) {
+  .our-products .our-products--menu .menu {
+    gap: 50 !important;
+    height: 100%;
+  }
   .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     font-size: 20px !important;
   }
@@ -539,6 +559,9 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
+  .about-us {
+    height: 500px;
+  }
   .about-us .container .description {
     width: 300px;
   }
@@ -683,8 +706,17 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .footer-top__form {
-    width: 300px !important;
+    width: 250px !important;
     height: 28px !important;
+  }
+  .footer-top__form input {
+    font-size: 9.2px !important;
+  }
+  .footer-top__form input::placeholder {
+    font-size: 9.2px !important;
+  }
+  .footer-top__form button {
+    font-size: 9.2px !important;
   }
 }
 

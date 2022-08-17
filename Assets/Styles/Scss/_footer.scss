@@ -155,8 +155,16 @@
     .footer{
         &-top{
             &__form{
-                width: 300px !important;
+                width: 250px !important;
                 height: 28px !important;
+                & input{
+                    font-size: 9.2px!important;
+                &::placeholder{
+                    font-size: 9.2px !important;
+                }}
+                & button{
+                    font-size:9.2px !important;
+                }
             }
         }
     }
