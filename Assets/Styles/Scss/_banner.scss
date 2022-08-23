@@ -1,6 +1,9 @@
 .banner{
+    max-height: 800px;
     width: 100%;
-    height: 800px;
+    max-height: 800px;
+    min-height: 500px;
+    height: 41.667vw;
     background-color: $color-3;
     & .title-slide{
         display: flex;
@@ -8,14 +11,14 @@
         align-items: flex-start;
         justify-content: left;
         position: absolute;
-        left: 124px;
+        left: 24.271vw;
         // top: 316px;
         margin-bottom: 19px;
         text-align:left;
         & h1{
             font-size: 48px;
             font-weight: var(--fw-5);
-            line-height: 58.51px;
+            line-height: 59px;
             margin-bottom: 16px;
         }
         & p{
@@ -23,7 +26,7 @@
             font-family: $font-roboto;
             font-size: 15px;
             font-weight: var(--fw-2);
-            line-height: 130%;
+            line-height: 19px;
         }
     }
 
@@ -32,8 +35,6 @@
 @media  only screen and (max-width:920px) {
     .banner{
         transition: 0.5s;
-        width: 100%;
-        height: 600px; 
         & .title-slide{
             margin-bottom: 0;
             & h1{
@@ -52,10 +53,7 @@
 @media  only screen and (max-width:768px) {
     .banner{
         transition: 0.5s;
-        width: 100%;
-        height: 400px;  
         & .title-slide{
-            left: 10vw;
             & h1{
             margin-bottom: 5px;
             line-height: 30px;
@@ -75,8 +73,9 @@
     .banner{
         
         & .title-slide{
+            left: 20vw;
             & h1{
-        
+                font-size: 25px;
             }
             & p{
                 overflow: hidden;

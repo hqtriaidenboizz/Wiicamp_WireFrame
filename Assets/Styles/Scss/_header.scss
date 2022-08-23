@@ -1,8 +1,9 @@
 .header{
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     z-index: 9999;
     height: 80px;
-    max-width: 1920px;
     width: 100%;
     background-color: $while;
     &-main{
@@ -12,24 +13,35 @@
         padding: 10px 0;
         & .menu{
             gap: 0 40px;
-            // &-link:not(:last-child):hover{
-            //     color: white;     
-            // }
             &-link{
                 color: black;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
                 & span{
-                    margin-left: 14px;
-                    padding: 0px 5px;    
+                    margin-left: 15px;
+                    width: 24px;
+                    height: 24px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     background-color: $black;
                     color: $while;
                     font-size: 14px;
                     font-weight: var(--fw-5);
-                    border-radius: 12px;
+                    border-radius: 100%;
+                    
                 }
             }
-            // &-item:not(:last-child):hover{
-            //     border-bottom: 2px solid black;
-            // }
+            &-item{
+                font-weight: 400;
+                line-height: 18.29px;
+                
+            }
+            &-item:last-child{
+                padding-left: 15px;
+            }
         }
     }   
 }
@@ -48,19 +60,20 @@
        &-main{
             & .navmobile{
                 transition: 1s;
-                transform: translate(0, 225px) !important;
+                transform: translate(0, 0px) !important;
                 z-index: 10;
                 box-shadow: 0px 10px 10px -17px #111;  
             }
            & .menu{
-               display: block;
+
                width: 100%;
                flex-direction: column;
                align-items: flex-start;
                position: absolute;
                transition: 1s;
-               transform: translate(0, -500px);
+               transform: translate(1000px, 0px);
                right: 0;
+               top: 80px;
                background-color: $while;
                z-index: 10;
                &-item{
@@ -69,6 +82,9 @@
                 width: 80%;
                 text-align: left;
                }
+               &-item:last-child{
+                padding-left: 0;
+            }
            }
        }
     }

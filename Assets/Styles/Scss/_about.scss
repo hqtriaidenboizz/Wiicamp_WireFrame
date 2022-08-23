@@ -1,15 +1,23 @@
 .about-us{
     width: 100%;
-    height: 900px;
+    max-height: 900px;
+    min-height: 500px;
+    height: 47vw;
     margin-top: 75px;
     background-color: $color-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
    & .container{
     display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
    & .description{
-    width: 581px;
+    max-width: 581px;
+    min-width: 250px;
+    width: 100%;
     margin: 38px 0 26px 0;
     font-family: $font-roboto;
     font-size: var(--fz-1);
@@ -21,11 +29,9 @@
 
 @media  only screen and (max-width:980px) {
     .about-us{
-        height: 600px;
         transition: 0.5s;
        & .container{
        & .description{
-        width: 500px;
        }
        }
     }
@@ -34,18 +40,23 @@
     .about-us{
        & .container{
        & .description{
-        width: 400px;
+
        }
        }
     }
 }
 @media  only screen and (max-width:480px) {
     .about-us{
-        height: 500px;
        & .container{
        & .description{
-        width: 300px;
+
+        padding: 0 15px;
        }
+       }
+       & .btn{
+        width: 150px;
+        height: 40px;
+
        }
     }
 }
