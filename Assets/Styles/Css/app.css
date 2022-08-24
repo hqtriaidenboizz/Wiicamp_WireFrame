@@ -559,7 +559,7 @@ body {
     max-width: 100% !important;
   }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
   .our-products .our-products--menu {
     background-color: #ffffff !important;
   }
